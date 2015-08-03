@@ -4,7 +4,7 @@ A basic NDK Android application powered by the OGRE 3D rendering
 engine. There is practically no Java layer - the main() function is in
 C++. Assuming it works on your device, it should display a black ogre head silhouette on a solid blue background:
 
-![Black ogre head silhoutte on blue background](https://github.com/holocronweaver/CleanOgreandroidproject/screenshots/ogre-android-bare.jpg)
+![Black ogre head silhoutte on blue background](https://github.com/holocronweaver/CleanOgreAndroidProject/blob/demo/screenshots/ogre-android-bare.png)
 
 Has been tested on Android 4 and 5 for `armeabi` and `armeabi-v7a` using
 OGRE 1.9 and 1.10 for the GLES2 render system.
