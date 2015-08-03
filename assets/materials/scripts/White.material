@@ -1,0 +1,41 @@
+vertex_program White/WhiteVS glsles
+{
+    source WhiteVS.glsles
+    syntax glsles
+    default_params
+    {
+        param_named_auto wvp worldviewproj_matrix
+    }
+}   
+
+fragment_program White/WhiteFS glsles
+{
+    source WhiteFS.glsles
+    syntax glsles
+}
+
+
+material White
+{
+    technique
+    {
+        pass
+        {
+            // polygon_mode wireframe
+
+            // cull_hardware none
+            // cull_software none
+
+            // depth_write off
+
+            vertex_program_ref White/WhiteVS
+            {
+            }
+
+            fragment_program_ref White/WhiteFS
+            {
+            }
+
+        }
+    }
+}

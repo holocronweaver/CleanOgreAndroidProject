@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.ogre3d.geometrywars"
+    package="com.ogre3d.nativeproject"
     android:versionCode="1"
     android:versionName="1.0" 
 	android:installLocation="auto">
 
-    <uses-sdk android:minSdkVersion="14" />
+    <uses-sdk android:minSdkVersion="19" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" /> 
 
     <!-- This .apk has no Java code itself, so set hasCode to false. -->
-    <application android:label="CleanOgreAndroidProject" android:icon="@drawable/ic_launcher" android:hasCode="false">
+    <application android:label="OgreNativeAndroidApplication" android:icon="@drawable/ic_launcher" android:hasCode="false">
         <activity android:name="android.app.NativeActivity"
-                  android:label="CleanOgreAndroidProject"
+                  android:label="OgreNativeAndroidApplication"
                   android:configChanges="orientation|screenSize|keyboardHidden"
-		   android:debuggable="true"
-		android:screenOrientation="landscape"  
-		android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+		  android:debuggable="true"
+		  android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+	          <!-- android:screenOrientation="landscape"   -->
             <!-- Tell NativeActivity the name of or .so -->
-            <meta-data android:name="android.app.lib_name" android:value="CleanOgreAndroidProject" />
+            <meta-data android:name="android.app.lib_name" android:value="OgreNativeAndroidApplication" />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
